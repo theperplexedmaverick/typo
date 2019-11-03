@@ -18,7 +18,9 @@ dbfile = File.expand_path("../config/database.yml", __FILE__)
 #    raise "Don't know what gem to use for adapter #{adapter}"
 #  end
 #end
-
+group :production do
+  gem 'pg'
+end
 
 source 'https://rubygems.org'
 ruby "1.9.3"
